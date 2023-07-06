@@ -1,6 +1,10 @@
 /* eslint-disable */
 import "./style.css";
 
+function generate(size) {
+  return Math.floor(Math.random() * size);
+}
+
 window.onload = function() {
   //write your code here
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
@@ -14,11 +18,11 @@ window.onload = function() {
     "while I was praying"
   ];
   document.getElementById("excuse").innerHTML =
-    who[Math.floor(Math.random() * 4)] +
+    who[generate(4)] +
     " " +
-    action[Math.floor(Math.random() * 4)] +
+    action[generate(4)] +
     " " +
-    what[Math.floor(Math.random() * 3)] +
+    what[generate(3)] +
     " " +
-    when[Math.floor(Math.random() * 5)];
+    when[generate(5)];
 };
