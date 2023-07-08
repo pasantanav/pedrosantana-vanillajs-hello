@@ -18,11 +18,11 @@ window.onload = function() {
     "while I was praying"
   ];
   document.getElementById("excuse").innerHTML =
-    who[generate(4)] +
+    who[generate(who.length)] +
     " " +
-    action[generate(4)] +
+    action[generate(action.length)] +
     " " +
-    what[generate(3)] +
+    what[generate(what.length)] +
     " " +
-    when[generate(5)];
+    when[generate(when.length)];
 };
